@@ -9,13 +9,13 @@ body {
   font-family: 'montserrat', sans-serif;
   font-size: 13px;
   color: #515076;
-  background-image: url(img/dandelions_bg.png);
+  background-image: url("img/dandelions_bg.png");
   background-repeat: no-repeat;
 }
 
 .container {
   max-width: 1110px;
-  margin: 0 auto;;  ;
+  margin: 0 auto;
   background-size: 790px 697px;
   padding-top: 220px;
 }
@@ -39,7 +39,7 @@ body {
   width: 340px;
   background-color: #f7f7fa;
   padding: 25px;
-  margin: 15px
+  margin: 15px;
 }
 
 .product-category {
