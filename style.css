@@ -1,76 +1,92 @@
-body {
-  font-family: Arial, sans-serif;
-  font-size: 13px;;
-}
-
-.title {
-  font-size: 80px;
-  font-weight: 400;
-  line-height: 78px;
+* { 
   margin: 0;
-  text-align: center;
-  color: #515076;
-}
-
-.product_list {
-  list-style: none;
   padding: 0;
-  margin: 0;
+  box-sizing: border-box;
+
 }
-.description,.compound {
+
+body {
+  font-family: 'montserrat', sans-serif;
   font-size: 13px;
-  line-height: 18px;
   color: #515076;
+  background-image: url("img/dandelions_bg.png");
+  background-repeat: no-repeat;
 }
-.catalog_image {
-  width: 290px;
-  height: 245px;
-  top: 433px;
-  left: 110px;
+
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+  background-size: 790px 697px;
+  padding-top: 220px;
 }
-.describe {
+
+.product-title {
+  font-size: 70px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 110px;
+  line-height: 78px;
+}
+
+.product-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  width: 340px;
+  background-color: #f7f7fa;
+  padding: 25px;
+  margin: 15px;
+}
+
+.product-category {
+  display:block;
   font-size: 12px;
   line-height: 24px;
-  color: #515076;
+  color: #A5A3B9;
+  margin-top: 30px;
 }
-.price_rub {
-  font-size: 20px;
-  line-height: 24px;
-  color: #515076;
-  font-weight: 400;
-}
-.price {
-  font-size: 13px;
-  line-height: 18px;
-  color: #515076;
-  font-weight: 700;
-}
-.catalog_list {
-  padding: 10px;
-  margin: 10px;
-}
-.catalog_item {
-  font-size: 13px;
-  line-height: 18px;
-  color: #515076;
-}
-.heading {
+
+.product-name {
   font-size: 20px;
   line-height: 27px;
-  color: #515076;
-  font-weight: 700;
+  margin-bottom: 7px;
 }
-.catalog_inner {
-  box-sizing: border-box;
-  max-width: 340px;
-  max-height: 573px;
-  padding: 25px;
-  margin: 45px;
-  background-color: #f7f7f5;
+
+.product-description {
+  line-height: 18px;
+  margin-bottom: 25px;
 }
-.catalog_image {
-  width: 290px;
-  height: 245px;
-  top: 433px;
-  left: 110px;
+
+.product-compound_block {
+  margin-bottom: 25px;
 }
+
+.product-compound {
+  display: block;
+  line-height: 18px;
+}
+
+.product-compound_ingredients {
+  line-height: 18px;
+  margin-bottom: 5px;
+}
+
+.product-price_text {
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.product-price {
+  font-size: 20px;
+}
+
+.product-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+
