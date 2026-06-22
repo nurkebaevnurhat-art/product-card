@@ -1,92 +1,22 @@
-* { 
+*{
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-
 }
 
 body {
   font-family: 'montserrat', sans-serif;
-  font-size: 13px;
   color: #515076;
+  width: 1110px;
   background-image: url("img/dandelions_bg.png");
   background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
-.container {
-  max-width: 1110px;
-  margin: 0 auto;
-  background-size: 790px 697px;
-  padding-top: 220px;
+.compound__list {
+  font-size: 13px;
 }
 
-.product-title {
-  font-size: 70px;
-  font-weight: 400;
-  text-align: center;
-  margin-bottom: 110px;
-  line-height: 78px;
+.compound__name {
+  display: block;   
 }
-
-.product-list {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.product-card {
-  width: 340px;
-  background-color: #f7f7fa;
-  padding: 25px;
-  margin: 15px;
-}
-
-.product-category {
-  display:block;
-  font-size: 12px;
-  line-height: 24px;
-  color: #A5A3B9;
-  margin-top: 30px;
-}
-
-.product-name {
-  font-size: 20px;
-  line-height: 27px;
-  margin-bottom: 7px;
-}
-
-.product-description {
-  line-height: 18px;
-  margin-bottom: 25px;
-}
-
-.product-compound_block {
-  margin-bottom: 25px;
-}
-
-.product-compound {
-  display: block;
-  line-height: 18px;
-}
-
-.product-compound_ingredients {
-  line-height: 18px;
-  margin-bottom: 5px;
-}
-
-.product-price_text {
-  font-size: 20px;
-  padding-bottom: 10px;
-}
-
-.product-price {
-  font-size: 20px;
-}
-
-.product-footer {
-  display: flex;
-  justify-content: space-between;
-}
-
-
