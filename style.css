@@ -1,92 +1,91 @@
-* { 
+*{
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-
 }
 
 body {
   font-family: 'montserrat', sans-serif;
-  font-size: 13px;
   color: #515076;
+  width: 1110px;
   background-image: url("img/dandelions_bg.png");
   background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.title {
+  font-size: 70px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 78px;
+  margin-top: 220px;
+  margin-bottom: 110px;
 }
 
 .container {
   max-width: 1110px;
   margin: 0 auto;
-  background-size: 790px 697px;
-  padding-top: 220px;
 }
 
-.product-title {
-  font-size: 70px;
-  font-weight: 400;
-  text-align: center;
+.catalog__title {
+  margin-top: 220px;
   margin-bottom: 110px;
-  line-height: 78px;
 }
 
-.product-list {
-  list-style: none;
+.products {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  gap: 45px;
 }
 
-.product-card {
-  width: 340px;
+.card {
   background-color: #f7f7fa;
-  padding: 25px;
-  margin: 15px;
-}
-
-.product-category {
-  display:block;
-  font-size: 12px;
-  line-height: 24px;
-  color: #A5A3B9;
-  margin-top: 30px;
-}
-
-.product-name {
-  font-size: 20px;
-  line-height: 27px;
-  margin-bottom: 7px;
-}
-
-.product-description {
-  line-height: 18px;
-  margin-bottom: 25px;
-}
-
-.product-compound_block {
-  margin-bottom: 25px;
-}
-
-.product-compound {
   display: block;
-  line-height: 18px;
+  width: 340px;
+  padding: 25px;
 }
 
-.product-compound_ingredients {
-  line-height: 18px;
+.card__category {
+  display: block;
+  line-height: 24px;
+  margin-top: 30px;
+  color: #a5a3b9;
   margin-bottom: 5px;
 }
 
-.product-price_text {
+.card__name {
   font-size: 20px;
-  padding-bottom: 10px;
+  line-height: 27px;
+  margin-bottom: 5px;
 }
 
-.product-price {
-  font-size: 20px;
+.card__description {
+  line-height: 18px;
+  margin-bottom: 15px;
+  font-size: 13px;
 }
 
-.product-footer {
+.compound__list {
+  font-size: 13px;
+}
+
+.compound__name {
+  display: block;   
+}
+
+.card__price-block {
   display: flex;
   justify-content: space-between;
+  margin-top: 25px;
 }
 
+.card__price {
+  font-size: 20px;
+  line-height: 24px;
+}
 
+.card__value {
+  font-size: 20px;
+  line-height: 24px;
+}
