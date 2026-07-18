@@ -4,7 +4,7 @@ function showWeather(city,temperature) {
 
 showWeather('Москва', 20);
 
-const light_speed = '299 792 458';
+const LIGHT_SPEED = '299 792 458';
 
 function showSpeed(speed) {
   if (speed > light_speed) {
@@ -21,7 +21,7 @@ showSpeed('299 792 457');
 let variableNumber1 = 'milk';
 let variableNumber2 = 'price';
 
-function milkPrice(currentBudget, variableNumber2) {
+function showPrice(currentBudget, variableNumber2) {
   if (currentBudget > variableNumber2) {
     console.log(` ${variableNumber1} товар приобретен. спасибо за покупку`);
   } else {
