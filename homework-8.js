@@ -18,7 +18,7 @@ const car = {
   engine: "2.5L",
   transmission: "automatic",
 }
-  car.Owner = user
+  car.owner = user
   console.log(user)
 
 
@@ -32,10 +32,10 @@ function ensureMaxSpeed(car, defaultValue = 200) {
 console.log(ensureMaxSpeed(car));
 
 // № 6 функция 
-function getProrertyValues(obj, propertyName) {
+function getObjectProperty(obj, propertyName) {
   console.log(obj[propertyName]);
 }
-getProrertyValues(user, 'name');
+getObjectProperty(user, 'name');
 
 // № 7 массив со списком продуктов
 const products = ["apple", "banana", "orange", "grape", "kiwi"];
@@ -125,12 +125,13 @@ const starWarsBooks = [
   const allBooks = [...books, ...starWarsBooks];
 
 // № 10 добавление свойства old в объект книги
-  const addProperty = allBooks.map(book => {
-    if (book.year < 2000) {
-      book.old = true;
-    }
-    else {
-      book.old = false;
-    }
-  });
-  console.log(allBooks);
+const booksWithOldProperty = allBooks.map(book => {
+if (book.year < 2000) {
+  book.old = true;
+}
+else {
+  book.old = false;
+}
+return book;
+});
+  console.log(booksWithOldProperty);
