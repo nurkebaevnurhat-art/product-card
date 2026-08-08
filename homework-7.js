@@ -7,9 +7,9 @@ showWeather('Москва', 20);
 const LIGHT_SPEED = '299 792 458';
 
 function showSpeed(speed) {
-  if (speed > light_speed) {
+  if (speed > LIGHT_SPEED) {
     console.log('Сверхсветовая скорость');
-  } else if (speed === light_speed) {
+  } else if (speed === LIGHT_SPEED) {
     console.log('Световая скорость');
   } else {
     console.log('субсветовая скорость');
@@ -29,4 +29,4 @@ function showPrice(currentBudget, variableNumber2) {
   }
 }
 
-milkPrice(100, 150);
+showPrice(100, 150);
