@@ -13,9 +13,9 @@ const isPresent = furniture.includes('sofa');
 console.log(isPresent);
 
 // задание №4
-function reverseArray (arr) {
-return arr.reverse();
-}
+function reverseArray(array) {
+  return array.reverse()
+};
 
 console.log(reverseArray(numbers));
 console.log(reverseArray(furniture));
@@ -26,7 +26,7 @@ const mailComUsers = usersComments.filter(user => user.email.includes ('.com'));
 console.log(mailComUsers);
 
 // задание №8
-const updatedUsers = usersComments.map(user => ({ ...user, postId: user.id<=5 ? 2 : 1 }));
+const updatedUsers = usersComments.map(user => ({ ...user, postId: user.id <= 5 ? 2 : 1 }));
 
 console.log(updatedUsers);
 
@@ -40,6 +40,6 @@ const updatedUsersComments = {...usersComments, isInvalid: 180};
 
 console.log(updatedUsersComments);
 
-const PropertyUserComments = usersComments.map(user => ({...user, isInvalid: user.body.length < 180 ? true: false}));
+const validetComments = usersComments.map(user => ({...user, isInvalid: user.body.length < 180 ? true: false}));
 
-console.log(PropertyUserComments);
+console.log(validetComments);
