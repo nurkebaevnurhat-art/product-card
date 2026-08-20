@@ -23,15 +23,29 @@ function renderProductCards() {
 renderProductCards(productCard);
 
 // №4 используя метод reduce, создайте объект, в котором ключом будет название продукта, а значением - описание
-  const products = [
-    { name: 'Яблоко', description: 'Спелое и сочное' },
-    { name: 'Хлеб', description: 'Свежевыпеченный ржаной' },
-    { name: 'Молоко', description: 'Пастеризованное 3.2%' }
-  ];
-
-  const result = products.reduce((acc, item) => {
-    acc[item.name] = item.description;
+function getProductDescriptions(products) {
+  return products.reduce((acc, product) => {
+    acc[product.title] = product.description;
     return acc;
   }, {});
+}
 
-  console.log(result);
+const productDescriptions = getProductDescriptions(productCard);
+console.log(productDescriptions);
+
+
+
+
+
+const productCardTemplate = document.getElementById("product-card-template");
+const productCardsContainer = document.getElementById("product-cards");
+productCard.forEach((product) => {
+  const productClone = productCardTemplate.content.cloneNode(true);
+  productClone.querySelector(".card__name").textContent = product.title;
+  productClone.querySelector(".card__category").textContent = product.category;
+  productClone.querySelector(".card__description").textContent = product.description;
+  productClone.querySelector(".compound__list").textContent = product.compound__list.join(", ");
+  productClone.querySelector(".card__price").textContent = `${product.price}  &#8381`;
+  productCardsContainer.appendChild(productClone);
+  console.log(productCardsContainer)
+});
