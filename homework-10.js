@@ -17,11 +17,6 @@ function showProducts() {
 }
 showProducts();
 
-function renderProductCards() {
-  const productCardsContainer = document.getElementById("product-cards");
-}
-renderProductCards(productCard);
-
 // №4 используя метод reduce, создайте объект, в котором ключом будет название продукта, а значением - описание
 const productDescriptions = productCard.reduce((acc, product) => {
   acc.push({ [product.title]: product.description });
@@ -34,7 +29,10 @@ console.log(productDescriptions);
 const productCardTemplate = document.getElementById("product-card-template");
 const productCardsContainer = document.getElementById("product-cards");
 
-productCard.forEach((product) => {
+function renderProductCards() {
+  const productCardsContainer = document.getElementById("product-cards");
+
+  productCard.forEach((product) => {
   const productClone = productCardTemplate.content.cloneNode(true);
   productClone.querySelector(".card__name").textContent = product.title;
   productClone.querySelector(".card__category").textContent = product.category;
@@ -44,3 +42,5 @@ productCard.forEach((product) => {
   productClone.querySelector(".card__image").src = `img/${product.img}.png`;
   productCardsContainer.appendChild(productClone);
 });
+}
+renderProductCards(productCard);
