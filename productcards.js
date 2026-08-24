@@ -36,7 +36,7 @@ export const productCard = [
     price: 1650
   },
   {
-    img:'gift set',
+    img:'gift_set',
     title: "Подарочный набор №1",
     category: "для нормальной кожи",
     description: "Набор, состоящий из увлажняющего крема и маски.",
@@ -48,7 +48,7 @@ export const productCard = [
     price: 4750
   },
   {
-    img:'gift set 2',
+    img:'gift_set 2',
     title: "Подарочный набор №2",
     category: "для нормальной кожи",
     description: "Весь набор средств Invisible symphony, крем, маска, мусс и гель для умывания..",
