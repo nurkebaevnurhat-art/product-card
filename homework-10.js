@@ -17,15 +17,6 @@ function showProducts() {
 }
 showProducts();
 
-// №4 используя метод reduce, создайте объект, в котором ключом будет название продукта, а значением - описание
-const productDescriptions = productCard.reduce((acc, product) => {
-  acc.push({ [product.title]: product.description });
-  return acc;
-}, []);
-
-console.log(productDescriptions);
-
-
 const productCardTemplate = document.getElementById("product-card-template");
 const productCardsContainer = document.getElementById("product-cards");
 
@@ -44,3 +35,11 @@ function renderProductCards() {
 });
 }
 renderProductCards(productCard);
+
+// №4 используя метод reduce, создайте объект, в котором ключом будет название продукта, а значением - описание
+const productDescriptions = productCard.reduce((acc, product) => {
+  acc.push({ [product.title]: product.description });
+  return acc;
+}, []);
+
+console.log(productDescriptions);
