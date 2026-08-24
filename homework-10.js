@@ -41,6 +41,6 @@ productCard.forEach((product) => {
   productClone.querySelector(".card__description").textContent = product.description;
   productClone.querySelector(".compound__list").textContent = product.compound__list.join(", ");
   productClone.querySelector(".card__value").textContent = `${product.price} ₽`;
-  productClone.querySelector("img").src = product.img;
+  productClone.querySelector(".card__image").src = `img/${product.img}.png`;
   productCardsContainer.appendChild(productClone);
 });
