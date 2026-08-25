@@ -9,7 +9,7 @@ export const productCard = [
       "витамины С, А, РР, В И Е",
       "солнцезащитные компоненты"
     ],
-    price: 2750
+    price: 2750,
   },
   {
     img:'mask',
@@ -21,7 +21,7 @@ export const productCard = [
       "минералы",
       "масла"
     ],
-    price: 3500
+    price: 3500,
   },
   {
     img:'gel',
@@ -33,7 +33,7 @@ export const productCard = [
       "витамины С, А, РР, В И Е",
       "солнцезащитные компоненты"
     ],
-    price: 1650
+    price: 1650,
   },
   {
     img:'gift_set',
@@ -45,7 +45,7 @@ export const productCard = [
       "минералы",
       "масла"
     ],
-    price: 4750
+    price: 4750,
   },
   {
     img:'gift_set 2',
@@ -57,6 +57,6 @@ export const productCard = [
       "минералы",
       "масла"
     ],
-    price: 7520
+    price: 7520,
   }
 ];
