@@ -20,18 +20,24 @@ showProducts();
 const productCardTemplate = document.getElementById("product-card-template");
 const productCardsContainer = document.getElementById("product-cards");
 
+
 function renderProductCards(products) {
   const productCardsContainer = document.getElementById("product-cards");
-
   products.forEach((product) => {
     const productClone = productCardTemplate.content.cloneNode(true);
     productClone.querySelector(".card__title").textContent = product.title;
     productClone.querySelector(".card__category").textContent = product.category;
     productClone.querySelector(".card__description").textContent = product.description;
-    productClone.querySelector(".compound__list").textContent = product.compound__list;
-    productClone.querySelector(".card__price").innerHTML =`цена:${product.price} &#8381;`;
+    productClone.querySelector(".card__value").innerHTML =`${product.price} &#8381;`;
     productClone.querySelector(".card__image").src = `img/${product.img}.png`;
-    productCardsContainer.appendChild(productClone);
+    product.compound__list.forEach((compoundItem) => {
+      const li = document.createElement("li");
+      li.classList.add(".compound__list");
+      li.textContent = compoundItem;
+      productClone.querySelector(".compound__list").appendChild(li)
+
+   });
+   productCardsContainer.appendChild(productClone);
   });
 }
 

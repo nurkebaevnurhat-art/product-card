@@ -71,10 +71,10 @@ body {
 }
 
 .compound__name {
-  display: block;   
+   display: block;
 }
 
-.card__price-block {
+.card__price_block {
   display: flex;
   justify-content: space-between;
   margin-top: 25px;
@@ -83,6 +83,7 @@ body {
 .card__price {
   font-size: 20px;
   line-height: 24px;
+  font-weight: 700;
 }
 
 .card__value {
