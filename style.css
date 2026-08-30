@@ -68,10 +68,13 @@ body {
 
 .compound__list {
   font-size: 13px;
+  padding-left: 0;
+  list-style-position: inside;
 }
 
 .compound__name {
-   display: block;
+  display: block;
+  padding-bottom: 5px;
 }
 
 .card__price_block {
@@ -84,11 +87,14 @@ body {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
+  margin: 0;
+
 }
 
 .card__value {
   font-size: 20px;
   line-height: 24px;
+  margin: 0;
 }
 
 .color-toggle-button {

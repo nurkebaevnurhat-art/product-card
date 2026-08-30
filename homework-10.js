@@ -32,7 +32,7 @@ function renderProductCards(products) {
     productClone.querySelector(".card__image").src = `img/${product.img}.png`;
     product.compound__list.forEach((compoundItem) => {
       const li = document.createElement("li");
-      li.classList.add(".compound__list");
+      li.classList.add("compound__list");
       li.textContent = compoundItem;
       productClone.querySelector(".compound__list").appendChild(li)
 
