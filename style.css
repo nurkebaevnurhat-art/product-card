@@ -32,7 +32,7 @@ body {
   margin-bottom: 110px;
 }
 
-.products {
+#product-cards {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -54,7 +54,7 @@ body {
   margin-bottom: 5px;
 }
 
-.card__name {
+.card__title {
   font-size: 20px;
   line-height: 27px;
   margin-bottom: 5px;
@@ -68,13 +68,16 @@ body {
 
 .compound__list {
   font-size: 13px;
+  padding-left: 0;
+  list-style-position: inside;
 }
 
 .compound__name {
-  display: block;   
+  display: block;
+  padding-bottom: 5px;
 }
 
-.card__price-block {
+.card__price_block {
   display: flex;
   justify-content: space-between;
   margin-top: 25px;
@@ -83,11 +86,15 @@ body {
 .card__price {
   font-size: 20px;
   line-height: 24px;
+  font-weight: 700;
+  margin: 0;
+
 }
 
 .card__value {
   font-size: 20px;
   line-height: 24px;
+  margin: 0;
 }
 
 .color-toggle-button {
