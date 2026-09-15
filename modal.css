@@ -1,0 +1,116 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 1000;
+}
+
+.overlay.overlay_showed {
+  display: block;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 420px;
+  max-width: 90%;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.995);
+  border-radius: 16px;
+  box-sizing: border-box;
+  display: none;
+  z-index: 1001;
+}
+
+.modal.modal_showed {
+  display: block;
+}
+
+.registration_title {
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  color: #515076;
+}
+
+.modal_close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  border: none;
+  background: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #515076;
+}
+
+.registration_form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.registration_form label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 14px;
+  color: #515076;
+}
+
+.registration_form input {
+  width: 100%;
+  padding: 10px 12px;
+  box-sizing: border-box;
+  border: 1px solid #515076;
+  border-radius: 16px;
+  font-size: 12px;
+  outline: none;
+}
+
+.registration_form input:focus {
+  border-color: #555;
+}
+
+
+.registration_form button[type="submit"] {
+  margin-top: 10px;
+  padding: 12px;
+  border: none;
+  border-radius: 16px;
+  background-color: #515076;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.registration_form button[type="submit"]:hover {
+  opacity: 0.85;
+}
+
+.open_registration {
+  position: fixed;
+  top: 40px;
+  right: 40px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 16px;
+  background-color: #515076;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  z-index: 900;
+}
+
+.open_registration:hover {
+  background-color: #444;
+}
+
+.open_registration:active {
+  transform: scale(0.97);
+}
