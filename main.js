@@ -1,3 +1,35 @@
+import './comments.js'
+import './homework-7.js'
+import './homework-8.js'
+import './homework-9.js'
+import './homework-10.js'
+import './homework-11.js'
+import './homework-12.js'
+import Modal from "./modal.js";
+import Form from "./form.js";
+
+const registrationModal = new Modal("registration-modal");
+const openRegistrationButton =
+  document.querySelector(".open_registration");
+openRegistrationButton.addEventListener("click", () => {
+  registrationModal.open();
+});
+
+const registrationFormElement =
+  document.getElementById("registration-form");
+const registrationForm =
+  new Form("registration-form");
+registrationFormElement.addEventListener("submit", (event) => {
+event.preventDefault();
+if (!registrationForm.isValid()) {
+  return;
+}
+  const user = registrationForm.getValues();
+  console.log(user);
+  registrationForm.reset();
+});
+
+
 const productCards = document.querySelectorAll('.card');
 const changeColorAllCardsButton = document.querySelector('#change-color-all-cards');
 const outputTitleConsole = document.querySelector('.title');
