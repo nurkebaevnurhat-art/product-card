@@ -17,15 +17,19 @@ console.log(
   `${this.name}, размер: ${this.size}, цена: ${this.price} ₽`
   );
 }
+
 getTemperature() {
   return this.#temperature;
 }
+
 setTemperature(temperature) {
   this.#temperature = temperature;
 }
+
 #prepare() {
   console.log(`${this.name} готовится...`);
 }
+
 serve() {
   this.#prepare();
   console.log(`${this.name} подан`);
@@ -39,6 +43,7 @@ constructor(name, size, price, temperature, beans, milk) {
   this.beans = beans;
   this.milk = milk;
 }
+
 getInfo() {
   console.log(
   `${this.name}, ${this.size}, ${this.price} ₽,  +
@@ -68,6 +73,7 @@ constructor(name, size, price, temperature, flavor) {
 
   this.flavor = flavor;
 }
+
 getInfo() {
   console.log(
   `${this.name}, ${this.size}, ${this.price} ₽,  +
@@ -87,6 +93,7 @@ getInfo() {
   `Кафе: ${this.name}, местоположение: ${this.location}`
   );
 }
+
 orderDrink(drink) {
   console.log(`Заказ принят: ${drink.name}`);
   drink.serve();
@@ -130,7 +137,9 @@ tea.getInfo();
 lemonade.getInfo();
 
 console.log (`Температура кофе: ${coffee.getTemperature()}°C`);
+
 coffee.setTemperature(65);
+
 console.log (`Новая температура кофе: ${coffee.getTemperature()}°C`);
 
 cafe.orderDrink (coffee);
