@@ -1,5 +1,5 @@
 class Drink {
-#temperature;
+  #temperature;
 
 constructor(name, size, price, temperature) {
   if (new.target === Drink) {
@@ -13,7 +13,7 @@ constructor(name, size, price, temperature) {
 }
 
 getInfo() {
-console.log(
+  console.log(
   `${this.name}, размер: ${this.size}, цена: ${this.price} ₽`
   );
 }
@@ -37,7 +37,7 @@ serve() {
 }
 
 class Coffee extends Drink {
-constructor(name, size, price, temperature, beans, milk) {
+  constructor(name, size, price, temperature, beans, milk) {
   super(name, size, price, temperature);
 
   this.beans = beans;
@@ -46,14 +46,14 @@ constructor(name, size, price, temperature, beans, milk) {
 
 getInfo() {
   console.log(
-  `${this.name}, ${this.size}, ${this.price} ₽,  +
-   зерна: ${this.beans}, молоко: ${this.milk}`
-  );
-}
+    `${this.name}, ${this.size}, ${this.price} ₽,  +
+    зерна: ${this.beans}, молоко: ${this.milk}`
+    );
+  }
 }
 
 class Tea extends Drink {
-constructor(name, size, price, temperature, teaType) {
+  constructor(name, size, price, temperature, teaType) {
   super(name, size, price, temperature);
 
   this.teaType = teaType;
@@ -61,14 +61,14 @@ constructor(name, size, price, temperature, teaType) {
 
 getInfo() {
   console.log(
-  `${this.name}, ${this.size}, ${this.price} ₽,  +
-  вид чая: ${this.teaType}`
-  );
-}
+    `${this.name}, ${this.size}, ${this.price} ₽,  +
+    вид чая: ${this.teaType}`
+    );
+  }
 }
 
 class Lemonade extends Drink {
-constructor(name, size, price, temperature, flavor) {
+  constructor(name, size, price, temperature, flavor) {
   super(name, size, price, temperature);
 
   this.flavor = flavor;
@@ -76,29 +76,29 @@ constructor(name, size, price, temperature, flavor) {
 
 getInfo() {
   console.log(
-  `${this.name}, ${this.size}, ${this.price} ₽,  +
-  вкус: ${this.flavor}`
-  );
-}
+    `${this.name}, ${this.size}, ${this.price} ₽,  +
+    вкус: ${this.flavor}`
+    );
+  }
 }
 
 class Cafe {
-constructor(name, location) {
+  constructor(name, location) {
   this.name = name;
   this.location = location;
 }
 
 getInfo() {
-  console.log(
-  `Кафе: ${this.name}, местоположение: ${this.location}`
+    console.log(
+    `Кафе: ${this.name}, местоположение: ${this.location}`
   );
 }
 
 orderDrink(drink) {
-  console.log(`Заказ принят: ${drink.name}`);
-  drink.serve();
-  console.log(`Заказ выполнен: ${drink.name}`);
-}
+    console.log(`Заказ принят: ${drink.name}`);
+    drink.serve();
+    console.log(`Заказ выполнен: ${drink.name}`);
+  }
 }
 
 const coffee = new Coffee (
