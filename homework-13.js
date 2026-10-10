@@ -117,7 +117,7 @@ const tea = new Tea(
 const lemonade = new Lemonade(
   "Лимонад",
   "500 мл",
-  300,
+  250,
   5,
   "Лимон"
 );
