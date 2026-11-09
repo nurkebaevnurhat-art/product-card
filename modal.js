@@ -1,35 +1,34 @@
 class Modal {
-constructor(id) {
-  this.modal = document.getElementById(id);
-  this.closeButton = this.modal.querySelector(".modal_close");
-  this.overlay = document.querySelector(".overlay");
-  this.listenCloseButton();
-  this.listenOverlay();
-}
+  constructor(id) {
+    this.modal = document.getElementById(id);
+    this.closeButton = this.modal.querySelector(".modal_close");
+    this.listenCloseButton();
+    this.listenBackdrop();
+  }
 
-open() {
-  this.modal.classList.add("modal_showed");
-  this.overlay.classList.add("overlay_showed");
-}
+  open() {
+    this.modal.showModal();
+  }
 
-close() {
-  this.modal.classList.remove("modal_showed");
-  this.overlay.classList.remove("overlay_showed");
-}
+  close() {
+    this.modal.close();
+  }
 
-isOpen() {
-  return this.modal.classList.contains("modal_showed");
-}
+  isOpen() {
+    return this.modal.open;
+  }
 
-listenCloseButton() {
-  this.closeButton.addEventListener("click", () => {
-  this.close();
-  });
-}
+  listenCloseButton() {
+    this.closeButton.addEventListener("click", () => {
+      this.close();
+    });
+  }
 
-listenOverlay() {
-  this.overlay.addEventListener("click", () => {
-  this.close();
+  listenBackdrop() {
+    this.modal.addEventListener("click", (event) => {
+      if (event.target === this.modal) {
+        this.close();
+      }
     });
   }
 }

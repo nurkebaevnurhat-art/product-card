@@ -1,32 +1,20 @@
-.overlay {
-  position: fixed;
-  inset: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  display: none;
-  z-index: 1000;
-}
-
-.overlay.overlay_showed {
-  display: block;
-}
-
 .modal {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   width: 420px;
   max-width: 90%;
-  padding: 30px;
-  background-color: rgba(255, 255, 255, 0.995);
+  padding: 0;
+  border: none;
   border-radius: 16px;
+  background-color: rgba(255, 255, 255, 0.995);
   box-sizing: border-box;
-  display: none;
-  z-index: 1001;
 }
 
-.modal.modal_showed {
-  display: block;
+.modal::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal_content {
+  position: relative;
+  padding: 30px;
 }
 
 .registration_title {
